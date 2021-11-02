@@ -9,7 +9,10 @@ function compute()
     var c = document.getElementById("finalresult");
     var d = document.getElementById("year");
     var time = new Date().getFullYear();
-        
+    if (p < 1){
+        alert("Please enter a valid number");
+        window.location.reload(true);
+    }
   
     time = time + +t;
     let interest = ((p*r*t) / 100);
