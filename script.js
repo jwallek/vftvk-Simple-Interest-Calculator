@@ -10,10 +10,12 @@ function compute()
     var d = document.getElementById("year");
     var time = new Date().getFullYear();
     if (p < 1){
-        alert("Please enter a valid number");
-        window.location.reload(true);
+        alert("Please enter a positive number greater than zero");
+        document.getElementById("principal").classList.add("invalid");
+        final.style.visibility ="hidden";
     }
-  
+    else if (p > 1){
+        document.getElementById("principal").classList.remove("invalid");
     time = time + +t;
     let interest = ((p*r*t) / 100);
        
@@ -23,7 +25,7 @@ function compute()
     d.innerHTML = " " + time;  
     
     final.style.visibility ="visible";
-        
+}
     
    
 }
