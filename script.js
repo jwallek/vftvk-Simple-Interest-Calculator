@@ -9,14 +9,18 @@ function compute()
     var c = document.getElementById("finalresult");
     var d = document.getElementById("year");
     var time = new Date().getFullYear();
+        
     
     time = time + +t;
     let interest = ((p*r*t) / 100) + +p;
-   
+       
     a.innerHTML = " " + p;
     b.innerHTML = " " + r;
     c.innerHTML = " " + interest;
     d.innerHTML = " " + time;  
     
     final.style.visibility ="visible";
+        
+    
+   
 }
