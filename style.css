@@ -94,3 +94,7 @@ h1 {
     margin-left: -40%;
   }
 }
+
+.input:invalid {
+  border: 5px solid red;
+}
