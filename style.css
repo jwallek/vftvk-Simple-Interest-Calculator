@@ -1,6 +1,96 @@
+* {
+  color: black;
+}
+
 body {
-  background-color: white;
+  background-color: black;
 }
 h1 {
-  color: green;
+  color: rgb(143, 143, 143);
+  font-size: 45px;
+  margin-top: -2px;
+}
+.calculator {
+  display: grid;
+  background-color: white;
+  place-items: center;
+  border: 5px solid;
+  height: 55vh;
+  width: 50%;
+  border-radius: 50px;
+  margin-top: 7%;
+  margin-left: 25%;
+}
+.form {
+  display: table;
+}
+.form input {
+  display: table-cell;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+.form label {
+  margin-right: 20px;
+}
+
+.rangeValue {
+  border: 0;
+  list-style: none;
+  width: 60px;
+  font-size: 18px;
+}
+
+.computeButton {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 25px;
+  cursor: pointer;
+}
+#years {
+  width: 50px;
+}
+.rate {
+  background: blue;
+}
+.highlight {
+  background-color: yellow;
+  color: black;
+}
+#report {
+  visibility: hidden;
+  font-weight: 200;
+}
+.footer {
+  margin-left: -60%;
+  margin-bottom: 10px;
+  margin-top: -5%;
+}
+#deposit,
+#interestRate,
+#finalresult,
+#year {
+  background-color: yellow;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 25px;
+  }
+  .calculator {
+    height: 60vh;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .footer {
+    margin-left: -40%;
+  }
+}
+@media (max-width: 1050px) {
+  h1 {
+    font-size: 30px;
+  }
+  .footer {
+    margin-left: -40%;
+  }
 }
